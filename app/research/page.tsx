@@ -1,6 +1,7 @@
 import { PageHero } from "@/components/page-hero"
 import { Reveal } from "@/components/reveal"
 import Image from "next/image"
+import { Download } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -57,6 +58,23 @@ export default function ResearchPage() {
               </p>
               <p className="pt-4 font-mono text-xs uppercase tracking-[0.3em] text-gold">
                 Source: Zero Mercury Working Group product-level database (1,143 samples)
+              </p>
+            </div>
+
+            <div className="mt-8 border-t border-border pt-8">
+              <p className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-gold">
+                Download the data
+              </p>
+              <a
+                href="/regulatory-audit.xlsx"
+                download="skin_lightening_regulatory_audit.xlsx"
+                className="inline-flex items-center gap-2 rounded-full border border-tone-4/30 bg-secondary/50 px-6 py-3 text-sm font-medium text-tone-1 transition-all hover:border-tone-3/60 hover:bg-secondary hover:text-tone-3 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+              >
+                <Download className="h-4 w-4" aria-hidden="true" />
+                Regulatory Audit Database
+              </a>
+              <p className="mt-4 text-xs text-muted-foreground">
+                Excel spreadsheet with regulatory status, ingredient restrictions, and enforcement data across regions.
               </p>
             </div>
           </Reveal>
