@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useRef } from "react";
 
 // ── Brand tokens ──────────────────────────────────────────────
@@ -107,7 +105,7 @@ const STRINGS = {
     plainHead: "সহজ ভাষায়",
     doHead: "আপনি কী করতে পারেন",
     again: "আরেকটি পণ্য স্ক্যান করুন",
-    footer: "এটি শিক্ষামূলক টুল, চিক��ৎসা পরামর্শ নয়। এটি ভেবে সন্দেহ জাগায় — রোগ নির্ণয় করে না, এবং কোনো পণ্যকে নিরাপদ ঘোষণা করে না।",
+    footer: "এটি শিক্ষামূলক টুল, চিকিৎসা পরামর্শ নয়। এটি ভেবে সন্দেহ জাগায় — রোগ নির্ণয় করে না, এবং কোনো পণ্যকে নিরাপদ ঘোষণা করে না।",
     riskHigh: "গুরুতর উদ্বেগ",
     riskCaution: "সতর্ক থাকুন",
     riskInfo: "বলা কঠিন",
@@ -286,61 +284,47 @@ export default function App() {
 
   function onFile(e) {
     const file = e.target.files?.[0];
-    if (!file) {
-      console.error("[v0] No file selected or file input blocked");
-      setError("No file selected. Please try again.");
-      return;
-    }
-    console.log("[v0] File selected:", file.name, file.type, file.size, "bytes");
+    if (!file) return;
     setResult(null);
     setError(null);
     const reader = new FileReader();
     reader.onload = () => {
       const url = reader.result;
-      console.log("[v0] File loaded as data URL, length:", url.length);
       setPreview(url);
       setImgData(String(url).split(",")[1]);
       setMediaType(file.type || "image/jpeg");
-    };
-    reader.onerror = () => {
-      console.error("[v0] FileReader error:", reader.error);
-      setError("Failed to load image. Please try another file.");
     };
     reader.readAsDataURL(file);
   }
 
   async function analyze() {
-    if (!imgData) {
-      console.error("[v0] Analyze called but imgData is missing. Possible file load failure.");
-      setError("Image not loaded. Please select a file first.");
-      return;
-    }
-    console.log("[v0] Starting analyze() with language:", lang.name, "image data length:", imgData.length);
+    if (!imgData) return;
     setLoading(true);
     setError(null);
     setResult(null);
     try {
-      console.log("[v0] Posting to /api/scan...");
-      const res = await fetch("/api/scan", {
+      const res = await fetch("https://api.anthropic.com/v1/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          imageData: imgData,
-          mediaType,
-          prompt: buildPrompt(lang.name),
+          model: "claude-sonnet-4-6",
+          max_tokens: 1000,
+          messages: [
+            {
+              role: "user",
+              content: [
+                { type: "image", source: { type: "base64", media_type: mediaType, data: imgData } },
+                { type: "text", text: buildPrompt(lang.name) },
+              ],
+            },
+          ],
         }),
       });
-      console.log("[v0] Fetch complete, status:", res.status);
       const data = await res.json();
-      console.log("[v0] Response parsed, data keys:", Object.keys(data));
-      if (data.error) {
-        console.error("[v0] Server returned error:", data.error);
-        const e = new Error(data.error);
-        e.__isServerError = true;
-        throw e;
-      }
-      const text = data.text || "";
-      console.log("[v0] Text response length:", text.length);
+      const text = (data.content || [])
+        .filter((b) => b.type === "text")
+        .map((b) => b.text)
+        .join("\n");
       // Tolerate code fences or stray text around the JSON (common with
       // non-Latin replies): pull out the first {...last } and parse that.
       let clean = text.replace(/```json/gi, "").replace(/```/g, "").trim();
@@ -349,27 +333,11 @@ export default function App() {
       if (start !== -1 && end !== -1 && end > start) {
         clean = clean.slice(start, end + 1);
       }
-      console.log("[v0] Parsing JSON, clean text:", clean.slice(0, 100) + "...");
       const parsed = JSON.parse(clean);
-      console.log("[v0] JSON parsed successfully, risk_level:", parsed.risk_level);
       if (!RISK_COLOR[parsed.risk_level]) parsed.risk_level = "insufficient_info";
       setResult(parsed);
     } catch (err) {
-      // Log the real cause for debugging (visible in DevTools console),
-      // instead of silently collapsing every failure into one message.
-      console.error("[v0] Scan failed:", err);
-      if (err && err.__isServerError) {
-        // Error came from our /api/scan route or Gemini itself — show it.
-        console.error("[v0] Server error (HTTP/API):", err.message);
-        setError(err.message);
-      } else {
-        // Response came back but wasn't parseable JSON — likely the model
-        // didn't follow the format, not a bad photo. Say so honestly.
-        console.error("[v0] JSON parse error or network error:", err.message);
-        setError(
-          `${t.error} (${lang.name === "English" ? "technical detail" : "details"}: response could not be read — try again in a moment)`
-        );
-      }
+      setError(t.error);
     } finally {
       setLoading(false);
     }
