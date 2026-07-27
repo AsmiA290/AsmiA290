@@ -42,17 +42,21 @@ export async function POST(req) {
     );
 
     const data = await gres.json();
+    console.log("[v0-scan] Gemini response status:", gres.status, "data keys:", Object.keys(data || {}));
 
     if (!gres.ok || data?.error) {
       // Common free-tier case: 429 = daily/RPM quota hit. Surface it plainly.
       const msg = data?.error?.message || data?.error || "Gemini request failed.";
+      console.error("[v0-scan] Gemini error:", msg);
       return Response.json({ error: msg }, { status: gres.status || 500 });
     }
 
     const candidate = data?.candidates?.[0];
+    console.log("[v0-scan] Candidate finishReason:", candidate?.finishReason);
     
     // Check if Gemini blocked the request due to safety filters
     if (candidate?.finishReason === "SAFETY") {
+      console.error("[v0-scan] Gemini blocked due to safety filters");
       return Response.json(
         { error: "Gemini safety filters blocked this image. Try a clearer product photo." },
         { status: 400 }
@@ -72,6 +76,7 @@ export async function POST(req) {
 
     return Response.json({ text });
   } catch (e) {
-    return Response.json({ error: "Server error." }, { status: 500 });
+    console.error("[v0-scan] Route error:", e.message, e.stack);
+    return Response.json({ error: "Server error: " + e.message }, { status: 500 });
   }
 }
