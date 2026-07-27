@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useRef } from "react";
 
 // ── Brand tokens ──────────────────────────────────────────────
@@ -303,28 +305,18 @@ export default function App() {
     setError(null);
     setResult(null);
     try {
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch("/api/scan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          model: "claude-sonnet-4-6",
-          max_tokens: 1000,
-          messages: [
-            {
-              role: "user",
-              content: [
-                { type: "image", source: { type: "base64", media_type: mediaType, data: imgData } },
-                { type: "text", text: buildPrompt(lang.name) },
-              ],
-            },
-          ],
+          imageData: imgData,
+          mediaType,
+          prompt: buildPrompt(lang.name),
         }),
       });
       const data = await res.json();
-      const text = (data.content || [])
-        .filter((b) => b.type === "text")
-        .map((b) => b.text)
-        .join("\n");
+      if (data.error) throw new Error(data.error);
+      const text = data.text || "";
       // Tolerate code fences or stray text around the JSON (common with
       // non-Latin replies): pull out the first {...last } and parse that.
       let clean = text.replace(/```json/gi, "").replace(/```/g, "").trim();
