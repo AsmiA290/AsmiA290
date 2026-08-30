@@ -4,7 +4,7 @@ import { Collaborators } from "@/components/sections/collaborators"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Founder — Unfair",
+  title: "Founder ; Unfair",
   description:
     "Meet Asmi Agarwal, founder of Unfair and researcher working at the intersection of dermatology, immunology, and deep learning to make skin health safer and more equitable.",
 }

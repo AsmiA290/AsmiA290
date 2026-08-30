@@ -28,7 +28,7 @@ export function MythBuster() {
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
             Decide whether each statement is true or false. There&apos;s no
-            score and no judgment — just a chance to check what the industry has
+            score and no judgment ; just a chance to check what the industry has
             taught us.
           </p>
           <p className="mt-3 text-sm text-tone-3" aria-live="polite">
@@ -99,7 +99,7 @@ export function MythBuster() {
                             <p className="text-sm font-medium text-tone-2">
                               {isCorrect
                                 ? "Exactly."
-                                : "A common belief — but no."}{" "}
+                                : "A common belief ; but no."}{" "}
                               This statement is {q.isTrue ? "true" : "false"}.
                             </p>
                             <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">

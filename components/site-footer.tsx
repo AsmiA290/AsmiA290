@@ -52,7 +52,7 @@ export function SiteFooter() {
           This is an educational and advocacy resource. It does not provide
           medical advice. The harm described here belongs to a global industry,
           to colorism, and to the regulatory gaps that allow unsafe products to
-          circulate — never to the people those products harm.
+          circulate ; never to the people those products harm.
         </p>
       </div>
     </footer>

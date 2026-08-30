@@ -33,7 +33,7 @@ export function DignitySwatches() {
           </p>
         </Reveal>
 
-        {/* All 8 tones as equal, beautiful swatches — no hierarchy */}
+        {/* All 8 tones as equal, beautiful swatches ; no hierarchy */}
         <Reveal delay={0.15}>
           <div className="mt-14 grid grid-cols-4 gap-3 sm:grid-cols-8 sm:gap-4">
             {skinTones.map((tone, i) => (

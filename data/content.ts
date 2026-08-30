@@ -154,7 +154,7 @@ export const stats: Stat[] = [
     suffix: "%",
     label: "Global lifetime prevalence of skin bleaching",
     context:
-      "A meta-analysis pooling 68 studies and 67,665 people found that more than 1 in 4 have bleached their skin — rising to 55.9% among those aged 30 and under.",
+      "A meta-analysis pooling 68 studies and 67,665 people found that more than 1 in 4 have bleached their skin ; rising to 55.9% among those aged 30 and under.",
     sourceIds: [9],
   },
 ]
@@ -173,7 +173,7 @@ export const regions: Region[] = [
     name: "Africa",
     range: "25–77%",
     context:
-      "Use is widespread and normalized across many countries, varying sharply by region — from roughly 25% in Mali to 77% of women in Nigeria.",
+      "Use is widespread and normalized across many countries, varying sharply by region ; from roughly 25% in Mali to 77% of women in Nigeria.",
     sourceIds: [2, 12],
   },
   {
@@ -270,7 +270,7 @@ export const ingredients: Ingredient[] = [
     whatItDoes:
       "Suppresses melanin to fade dark areas, but with prolonged or high-dose use the effect can reverse.",
     whatItDoesToBody:
-      "Exogenous ochronosis — a permanent, disfiguring blue-black darkening and thickening of the very skin it was meant to lighten.",
+      "Exogenous ochronosis ; a permanent, disfiguring blue-black darkening and thickening of the very skin it was meant to lighten.",
     limitLabel: "EU OTC cosmetics",
     limitValue: "Prohibited",
     realityLabel: "Sold unregulated",
@@ -316,7 +316,7 @@ export const quiz: QuizQuestion[] = [
     question: "If a lightening cream is sold in a store, it must be safe.",
     isTrue: false,
     explanation:
-      "Many products contain mercury, banned hydroquinone, or prescription steroids despite being on open shelves. Regulation and enforcement vary enormously between countries — availability is not a guarantee of safety.",
+      "Many products contain mercury, banned hydroquinone, or prescription steroids despite being on open shelves. Regulation and enforcement vary enormously between countries ; availability is not a guarantee of safety.",
   },
   {
     id: "reversible",
@@ -367,7 +367,7 @@ export const efforts: Effort[] = [
   {
     title: "DeepDermTox",
     description:
-      "A deep-learning platform in development to detect toxic and counterfeit cosmetics — including skin-lightening creams laced with mercury, hydroquinone, and hidden steroids — before they reach the people they harm.",
+      "A deep-learning platform in development to detect toxic and counterfeit cosmetics ; including skin-lightening creams laced with mercury, hydroquinone, and hidden steroids ; before they reach the people they harm.",
   },
   {
     title: "Rigorous research",
@@ -377,12 +377,12 @@ export const efforts: Effort[] = [
   {
     title: "Public education",
     description:
-      "Turning peer-reviewed findings into clear, accessible awareness — so the true cost of the global skin-lightening industry is understood by the communities it affects most.",
+      "Turning peer-reviewed findings into clear, accessible awareness ; so the true cost of the global skin-lightening industry is understood by the communities it affects most.",
   },
   {
     title: "A global standard of dignity",
     description:
-      "Working toward a future where no product, ad, or norm tells a person their skin tone is a problem to be fixed — and where safer, more equitable skin health is the baseline everywhere.",
+      "Working toward a future where no product, ad, or norm tells a person their skin tone is a problem to be fixed ; and where safer, more equitable skin health is the baseline everywhere.",
   },
 ]
 
@@ -390,11 +390,11 @@ export const author = {
   name: "Asmi Agarwal",
   role: "Founder · High school researcher in AI, dermatology & immunology",
   intro:
-    "Hi, I'm Asmi — a student at the Illinois Mathematics and Science Academy, working where deep learning, mathematics, dermatology, and public health meet.",
+    "Hi, I'm Asmi ; a student at the Illinois Mathematics and Science Academy, working where deep learning, mathematics, dermatology, and public health meet.",
   bio: [
     "I'm a Johns Hopkins Study of Exceptional Talent (SET) scholar and a Davidson Young Scholar, and a published co-author on peer-reviewed research spanning medical AI. I'm a research intern at SILO Med AI and at the Interdisciplinary Scientific AI Supercomputing Hub (ISAS) at the University of Illinois Springfield, and a Physician Pipeline Preparatory (P4) Scholar at SIU School of Medicine.",
-    "My focus is dermatology and immunology — specifically, using deep learning, mathematics, and analytical chemistry to make skin health safer and more equitable. Through DeepDermTox, a platform I'm building to detect toxic and counterfeit cosmetics, I've seen how unregulated products — including skin-lightening creams laced with mercury, hydroquinone, and hidden steroids — harm millions of people, and fall hardest on communities of color.",
-    "That's why I started this initiative: to expose the true cost of the global skin-lightening industry and build the science and awareness to counter it. My goal is a global effort that pairs rigorous research with public education — because no one should be told that their skin tone is a problem to be fixed.",
+    "My focus is dermatology and immunology ; specifically, using deep learning, mathematics, and analytical chemistry to make skin health safer and more equitable. Through DeepDermTox, a platform I'm building to detect toxic and counterfeit cosmetics, I've seen how unregulated products ; including skin-lightening creams laced with mercury, hydroquinone, and hidden steroids ; harm millions of people, and fall hardest on communities of color.",
+    "That's why I started this initiative: to expose the true cost of the global skin-lightening industry and build the science and awareness to counter it. My goal is a global effort that pairs rigorous research with public education ; because no one should be told that their skin tone is a problem to be fixed.",
   ],
   email: "aagarwal4@imsa.edu",
 }
@@ -402,7 +402,7 @@ export const author = {
 export const colorismBeats = [
   {
     year: "A manufactured ideal",
-    text: "The preference for lighter skin wasn't born in people — it was sold to them. Advertising tied fairness to beauty, marriage, and employment for generations.",
+    text: "The preference for lighter skin wasn't born in people ; it was sold to them. Advertising tied fairness to beauty, marriage, and employment for generations.",
     sourceIds: [5],
   },
   {
@@ -411,7 +411,7 @@ export const colorismBeats = [
     sourceIds: [5, 6],
   },
   {
-    year: "2020 — Glow & Lovely",
+    year: "2020 ; Glow & Lovely",
     text: "Amid global backlash, Unilever renamed Fair & Lovely to Glow & Lovely, dropping 'fair' and 'whitening' language. A name changed; the demand it built did not vanish overnight.",
     sourceIds: [5, 6],
   },

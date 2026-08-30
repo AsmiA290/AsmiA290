@@ -10,7 +10,7 @@
   --font-sans: var(--font-geist-sans), 'Geist Fallback';
   --font-mono: var(--font-geist-mono), 'Geist Mono Fallback';
 
-  /* Skin-tone spectrum — the literal core palette */
+  /* Skin-tone spectrum ; the literal core palette */
   --color-tone-1: var(--tone-1);
   --color-tone-2: var(--tone-2);
   --color-tone-3: var(--tone-3);

@@ -19,9 +19,9 @@ const fraunces = Fraunces({
 })
 
 export const metadata: Metadata = {
-  title: 'Unfair — The True Cost of Skin Lightening',
+  title: 'Unfair ; The True Cost of Skin Lightening',
   description:
-    'A $10 billion industry is built on telling people their skin is a problem. An evidence-based look at the harms of the global skin-lightening industry — and a celebration of every complexion.',
+    'A $10 billion industry is built on telling people their skin is a problem. An evidence-based look at the harms of the global skin-lightening industry ; and a celebration of every complexion.',
   generator: 'v0.app',
 }
 

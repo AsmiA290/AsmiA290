@@ -190,7 +190,7 @@ export function WorldMap() {
               </div>
               <p className="mt-6 border-t border-border pt-4 text-sm leading-relaxed text-muted-foreground">
                 Behind every search and every percentage are people navigating
-                pressure they did not create — at work, in marriage markets, on
+                pressure they did not create ; at work, in marriage markets, on
                 screens.
               </p>
             </motion.div>

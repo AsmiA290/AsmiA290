@@ -25,7 +25,7 @@ export function IngredientExplorer() {
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
             The most common active agents in unsafe lightening products are
-            regulated — or banned — for good reason. Open each to see the gap
+            regulated ; or banned ; for good reason. Open each to see the gap
             between what the law allows and what is actually found.
           </p>
         </Reveal>

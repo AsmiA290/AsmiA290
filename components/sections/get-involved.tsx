@@ -54,7 +54,7 @@ export function GetInvolved() {
           </p>
         </Reveal>
 
-        {/* Email signup stub — non-functional placeholder */}
+        {/* Email signup stub ; non-functional placeholder */}
         <Reveal delay={0.1}>
           <form
             onSubmit={(e) => {
@@ -87,7 +87,7 @@ export function GetInvolved() {
             aria-live="polite"
           >
             {submitted
-              ? "Thank you — you're on the list."
+              ? "Thank you ; you're on the list."
               : ""}
           </p>
         </Reveal>

@@ -31,7 +31,7 @@ export function ColorismEngine() {
           </h2>
           <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
             No one is born believing their skin is too dark. That belief was
-            built, advertised, and sold — generation after generation.
+            built, advertised, and sold ; generation after generation.
           </p>
         </Reveal>
 
@@ -76,7 +76,7 @@ export function ColorismEngine() {
             <figcaption className="mt-4 text-sm text-muted-foreground">
               The 2020 shift from <span className="text-tone-2">Fair &amp; Lovely</span>{" "}
               to <span className="text-tone-2">Glow &amp; Lovely</span> dropped
-              the language — but the market it created remains.
+              the language ; but the market it created remains.
             </figcaption>
           </figure>
         </Reveal>

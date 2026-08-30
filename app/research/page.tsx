@@ -5,7 +5,7 @@ import { Download } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Research — Unfair",
+  title: "Research ; Unfair",
   description:
     "Research initiatives from the Unfair project, pairing analytical chemistry, mathematics, and medical AI. Coming soon.",
 }
@@ -54,7 +54,7 @@ export default function ResearchPage() {
                 <span className="font-medium text-tone-1">Key findings:</span> Between 2017 and 2019, the broad market survey documented a troubling upward trend in mercury presence, rising from 4.7% to 56.0%. When targeted re-monitoring resumed in 2021, the crisis deepened: 93.8% of sampled products exceeded safe mercury thresholds, revealing that enforcement gaps and market deregulation have allowed dangerous contamination to proliferate.
               </p>
               <p>
-                Even as re-monitoring efforts continued (2022-25), contamination remained stubbornly high at 80.6–93.8%, indicating that surface-level interventions are insufficient. A structural solution—one that combines supply-chain transparency, rigorous testing, and regulatory coordination—is essential.
+                Even as re-monitoring efforts continued (2022-25), contamination remained stubbornly high at 80.6–93.8%, indicating that surface-level interventions are insufficient. A structural solution;one that combines supply-chain transparency, rigorous testing, and regulatory coordination;is essential.
               </p>
               <p className="pt-4 font-mono text-xs uppercase tracking-[0.3em] text-gold">
                 Source: Zero Mercury Working Group product-level database (1,143 samples)

@@ -33,7 +33,7 @@ const LANGS = [
 const RTL = new Set(["Urdu", "Arabic"]);
 
 // ── UI translations ───────────────────────────────────────────
-// Every visible interface string. Machine-assisted translations — have a
+// Every visible interface string. Machine-assisted translations ; have a
 // native speaker review before production, especially lower-resourced langs.
 const STRINGS = {
   English: {
@@ -45,12 +45,12 @@ const STRINGS = {
     retake: "Retake",
     loading: "Reading the label and the warning signs…",
     error: "The scan could not be read. Try again with a clear, well-lit photo of the back panel.",
-    neverSafe: "This tool can flag danger. It can never confirm a product is safe — a camera cannot see mercury.",
+    neverSafe: "This tool can flag danger. It can never confirm a product is safe ; a camera cannot see mercury.",
     flagsHead: "What raised a flag",
     plainHead: "In plain words",
     doHead: "What you can do",
     again: "Scan another product",
-    footer: "Educational tool, not medical advice. It raises informed suspicion — it does not diagnose, and it does not clear any product.",
+    footer: "Educational tool, not medical advice. It raises informed suspicion ; it does not diagnose, and it does not clear any product.",
     riskHigh: "High concern",
     riskCaution: "Use caution",
     riskInfo: "Not enough to tell",
@@ -64,12 +64,12 @@ const STRINGS = {
     retake: "फिर से लें",
     loading: "लेबल और चेतावनी के संकेत पढ़े जा रहे हैं…",
     error: "स्कैन पढ़ा नहीं जा सका। पीछे के पैनल की साफ़, अच्छी रोशनी वाली फ़ोटो के साथ दोबारा कोशिश करें।",
-    neverSafe: "यह टूल ख़तरे की चेतावनी दे सकता है। यह कभी पुष्टि नहीं कर सकता कि उत्पाद सुरक्षित है — कैमरा पारा नहीं देख सकता।",
+    neverSafe: "यह टूल ख़तरे की चेतावनी दे सकता है। यह कभी पुष्टि नहीं कर सकता कि उत्पाद सुरक्षित है ; कैमरा पारा नहीं देख सकता।",
     flagsHead: "क्या चेतावनी मिली",
     plainHead: "आसान शब्दों में",
     doHead: "आप क्या कर सकते हैं",
     again: "दूसरा उत्पाद स्कैन करें",
-    footer: "यह शैक्षिक टूल है, चिकित्सा सलाह नहीं। यह सोच-समझकर संदेह जगाता है — यह निदान नहीं करता, और किसी उत्पाद को सुरक्षित घोषित नहीं करता।",
+    footer: "यह शैक्षिक टूल है, चिकित्सा सलाह नहीं। यह सोच-समझकर संदेह जगाता है ; यह निदान नहीं करता, और किसी उत्पाद को सुरक्षित घोषित नहीं करता।",
     riskHigh: "गंभीर चिंता",
     riskCaution: "सावधानी बरतें",
     riskInfo: "बता पाना कठिन",
@@ -83,12 +83,12 @@ const STRINGS = {
     retake: "دوبارہ لیں",
     loading: "لیبل اور انتباہی نشانیاں پڑھی جا رہی ہیں…",
     error: "اسکین پڑھا نہیں جا سکا۔ پچھلے حصے کی صاف اور روشن تصویر کے ساتھ دوبارہ کوشش کریں۔",
-    neverSafe: "یہ ٹول خطرے کی نشاندہی کر سکتا ہے۔ یہ کبھی اس بات کی تصدیق نہیں کر سکتا کہ پروڈکٹ محفوظ ہے — کیمرہ پارہ نہیں دیکھ سکتا۔",
+    neverSafe: "یہ ٹول خطرے کی نشاندہی کر سکتا ہے۔ یہ کبھی اس بات کی تصدیق نہیں کر سکتا کہ پروڈکٹ محفوظ ہے ; کیمرہ پارہ نہیں دیکھ سکتا۔",
     flagsHead: "کس چیز نے خبردار کیا",
     plainHead: "آسان الفاظ میں",
     doHead: "آپ کیا کر سکتے ہیں",
     again: "دوسری پروڈکٹ اسکین کریں",
-    footer: "یہ تعلیمی ٹول ہے، طبی مشورہ نہیں۔ یہ سوچ سمجھ کر شک پیدا کرتا ہے — یہ تشخیص نہیں کرتا، اور کسی پروڈکٹ کو محفوظ قرار نہیں دیتا۔",
+    footer: "یہ تعلیمی ٹول ہے، طبی مشورہ نہیں۔ یہ سوچ سمجھ کر شک پیدا کرتا ہے ; یہ تشخیص نہیں کرتا، اور کسی پروڈکٹ کو محفوظ قرار نہیں دیتا۔",
     riskHigh: "سنگین تشویش",
     riskCaution: "احتیاط کریں",
     riskInfo: "بتانا مشکل",
@@ -102,12 +102,12 @@ const STRINGS = {
     retake: "আবার তুলুন",
     loading: "লেবেল ও সতর্কতার চিহ্ন পড়া হচ্ছে…",
     error: "স্ক্যানটি পড়া যায়নি। পেছনের প্যানেলের পরিষ্কার, ভালো আলোর ছবি দিয়ে আবার চেষ্টা করুন।",
-    neverSafe: "এই টুল বিপদ চিহ্নিত করতে পারে। এটি কখনও নিশ্চিত করতে পারে না যে পণ্যটি নিরাপদ — ক্যামেরা পারদ দেখতে পায় না।",
+    neverSafe: "এই টুল বিপদ চিহ্নিত করতে পারে। এটি কখনও নিশ্চিত করতে পারে না যে পণ্যটি নিরাপদ ; ক্যামেরা পারদ দেখতে পায় না।",
     flagsHead: "কী সতর্ক করল",
     plainHead: "সহজ ভাষায়",
     doHead: "আপনি কী করতে পারেন",
     again: "আরেকটি পণ্য স্ক্যান করুন",
-    footer: "এটি শিক্ষামূলক টুল, চিকিৎসা পরামর্শ নয়। এটি ভেবে সন্দেহ জাগায় — রোগ নির্ণয় করে না, এবং কোনো পণ্যকে নিরাপদ ঘোষণা করে না।",
+    footer: "এটি শিক্ষামূলক টুল, চিকিৎসা পরামর্শ নয়। এটি ভেবে সন্দেহ জাগায় ; রোগ নির্ণয় করে না, এবং কোনো পণ্যকে নিরাপদ ঘোষণা করে না।",
     riskHigh: "গুরুতর উদ্বেগ",
     riskCaution: "সতর্ক থাকুন",
     riskInfo: "বলা কঠিন",
@@ -121,12 +121,12 @@ const STRINGS = {
     retake: "Piga tena",
     loading: "Inasoma lebo na dalili za hatari…",
     error: "Picha haikusomeka. Jaribu tena kwa picha iliyo wazi na yenye mwanga ya upande wa nyuma.",
-    neverSafe: "Zana hii inaweza kuonya hatari. Haiwezi kamwe kuthibitisha kuwa bidhaa ni salama — kamera haiwezi kuona zebaki.",
+    neverSafe: "Zana hii inaweza kuonya hatari. Haiwezi kamwe kuthibitisha kuwa bidhaa ni salama ; kamera haiwezi kuona zebaki.",
     flagsHead: "Kilichoonya",
     plainHead: "Kwa lugha rahisi",
     doHead: "Unachoweza kufanya",
     again: "Changanua bidhaa nyingine",
-    footer: "Hii ni zana ya kielimu, si ushauri wa kitiba. Inaamsha shaka kwa busara — haitambui ugonjwa, wala haithibitishi bidhaa yoyote kuwa salama.",
+    footer: "Hii ni zana ya kielimu, si ushauri wa kitiba. Inaamsha shaka kwa busara ; haitambui ugonjwa, wala haithibitishi bidhaa yoyote kuwa salama.",
     riskHigh: "Wasiwasi mkubwa",
     riskCaution: "Kuwa mwangalifu",
     riskInfo: "Vigumu kusema",
@@ -140,12 +140,12 @@ const STRINGS = {
     retake: "Tún ya",
     loading: "Ń ka àpèjúwe àti àwọn àmì ìkìlọ̀…",
     error: "A kò lè ka àwòrán náà. Tún gbìyànjú pẹ̀lú àwòrán tó mọ́, tó ní ìmọ́lẹ̀ ti ẹ̀yìn ìgò.",
-    neverSafe: "Irinṣẹ́ yìí lè kìlọ̀ ewu. Kò lè jẹ́rìí rí pé ọjà kan ní ààbò — kamẹra kò lè rí mercury.",
+    neverSafe: "Irinṣẹ́ yìí lè kìlọ̀ ewu. Kò lè jẹ́rìí rí pé ọjà kan ní ààbò ; kamẹra kò lè rí mercury.",
     flagsHead: "Ohun tó kìlọ̀",
     plainHead: "Ní èdè tó rọrùn",
     doHead: "Ohun tí o lè ṣe",
     again: "Ṣàyẹ̀wò ọjà mìíràn",
-    footer: "Irinṣẹ́ ẹ̀kọ́ ni èyí, kì í ṣe ìmọ̀ràn ìṣègùn. Ó ń ru ìfura ọlọ́gbọ́n sókè — kò ṣe àyẹ̀wò àìsàn, kò sì fi ọjà kankan hàn pé ó ní ààbò.",
+    footer: "Irinṣẹ́ ẹ̀kọ́ ni èyí, kì í ṣe ìmọ̀ràn ìṣègùn. Ó ń ru ìfura ọlọ́gbọ́n sókè ; kò ṣe àyẹ̀wò àìsàn, kò sì fi ọjà kankan hàn pé ó ní ààbò.",
     riskHigh: "Àníyàn ńlá",
     riskCaution: "Ṣọ́ra",
     riskInfo: "Ó ṣòro láti sọ",
@@ -159,12 +159,12 @@ const STRINGS = {
     retake: "Reprendre",
     loading: "Lecture de l'étiquette et des signes d'alerte…",
     error: "Le scan n'a pas pu être lu. Réessayez avec une photo nette et bien éclairée du dos de l'emballage.",
-    neverSafe: "Cet outil peut signaler un danger. Il ne peut jamais confirmer qu'un produit est sûr — une caméra ne voit pas le mercure.",
+    neverSafe: "Cet outil peut signaler un danger. Il ne peut jamais confirmer qu'un produit est sûr ; une caméra ne voit pas le mercure.",
     flagsHead: "Ce qui a alerté",
     plainHead: "En mots simples",
     doHead: "Ce que vous pouvez faire",
     again: "Scanner un autre produit",
-    footer: "Outil éducatif, pas un avis médical. Il éveille un soupçon éclairé — il ne diagnostique pas et ne déclare aucun produit sûr.",
+    footer: "Outil éducatif, pas un avis médical. Il éveille un soupçon éclairé ; il ne diagnostique pas et ne déclare aucun produit sûr.",
     riskHigh: "Préoccupation élevée",
     riskCaution: "Prudence",
     riskInfo: "Impossible à dire",
@@ -178,12 +178,12 @@ const STRINGS = {
     retake: "Repetir",
     loading: "Leyendo la etiqueta y las señales de advertencia…",
     error: "No se pudo leer el escaneo. Inténtalo de nuevo con una foto clara y bien iluminada de la parte trasera.",
-    neverSafe: "Esta herramienta puede señalar peligro. Nunca puede confirmar que un producto es seguro — una cámara no puede ver el mercurio.",
+    neverSafe: "Esta herramienta puede señalar peligro. Nunca puede confirmar que un producto es seguro ; una cámara no puede ver el mercurio.",
     flagsHead: "Qué generó una alerta",
     plainHead: "En palabras sencillas",
     doHead: "Qué puedes hacer",
     again: "Escanear otro producto",
-    footer: "Herramienta educativa, no es consejo médico. Despierta una sospecha informada — no diagnostica ni declara seguro ningún producto.",
+    footer: "Herramienta educativa, no es consejo médico. Despierta una sospecha informada ; no diagnostica ni declara seguro ningún producto.",
     riskHigh: "Gran preocupación",
     riskCaution: "Precaución",
     riskInfo: "No se puede determinar",
@@ -197,12 +197,12 @@ const STRINGS = {
     retake: "Ulitin",
     loading: "Binabasa ang label at mga babala…",
     error: "Hindi nabasa ang scan. Subukan muli gamit ang malinaw at maliwanag na larawan ng likod na bahagi.",
-    neverSafe: "Maaaring magbabala ang tool na ito ng panganib. Hindi nito kailanman makukumpirma na ligtas ang isang produkto — hindi nakikita ng camera ang mercury.",
+    neverSafe: "Maaaring magbabala ang tool na ito ng panganib. Hindi nito kailanman makukumpirma na ligtas ang isang produkto ; hindi nakikita ng camera ang mercury.",
     flagsHead: "Ano ang nagbigay-babala",
     plainHead: "Sa simpleng salita",
     doHead: "Ano ang magagawa mo",
     again: "Mag-scan ng ibang produkto",
-    footer: "Pang-edukasyong tool ito, hindi medikal na payo. Nagdudulot ito ng matalinong pag-aalinlangan — hindi ito nagdya-diagnose, at hindi nito sinasabing ligtas ang anumang produkto.",
+    footer: "Pang-edukasyong tool ito, hindi medikal na payo. Nagdudulot ito ng matalinong pag-aalinlangan ; hindi ito nagdya-diagnose, at hindi nito sinasabing ligtas ang anumang produkto.",
     riskHigh: "Mataas na alalahanin",
     riskCaution: "Mag-ingat",
     riskInfo: "Mahirap masabi",
@@ -216,12 +216,12 @@ const STRINGS = {
     retake: "إعادة الالتقاط",
     loading: "تجري قراءة الملصق وعلامات التحذير…",
     error: "تعذّرت قراءة الصورة. حاول مرة أخرى بصورة واضحة وجيدة الإضاءة للجهة الخلفية.",
-    neverSafe: "يمكن لهذه الأداة أن تنبّه إلى الخطر. لا يمكنها أبداً تأكيد أن المنتج آمن — لا ترى الكاميرا الزئبق.",
+    neverSafe: "يمكن لهذه الأداة أن تنبّه إلى الخطر. لا يمكنها أبداً تأكيد أن المنتج آمن ; لا ترى الكاميرا الزئبق.",
     flagsHead: "ما الذي أثار التنبيه",
     plainHead: "بكلمات بسيطة",
     doHead: "ما الذي يمكنك فعله",
     again: "افحص منتجاً آخر",
-    footer: "أداة تعليمية، وليست نصيحة طبية. تثير شكاً واعياً — لا تُشخّص، ولا تؤكّد سلامة أي منتج.",
+    footer: "أداة تعليمية، وليست نصيحة طبية. تثير شكاً واعياً ; لا تُشخّص، ولا تؤكّد سلامة أي منتج.",
     riskHigh: "قلق شديد",
     riskCaution: "توخَّ الحذر",
     riskInfo: "يصعب الجزم",
@@ -246,11 +246,11 @@ Your job is NOT to decode an ingredient list and pronounce a product clean. The 
 
 NEVER tell the user a product is "safe", "clean", "fine", or "low risk". A phone camera cannot detect mercury or hidden steroids. The most you may ever conclude is "use caution" or "not enough to tell". There is no safe verdict in your output set.
 
-READING THE LABEL: The label may be printed in ANY language or script — Hindi, Urdu, Bengali, Arabic, Thai, Chinese, Swahili, French, and so on. Read it directly, whatever the script. A label being in a non-English or local language is NOT a red flag on its own; most safe products in these markets are labelled in local languages. The danger signal is MISSING information, never the choice of language.
+READING THE LABEL: The label may be printed in ANY language or script ; Hindi, Urdu, Bengali, Arabic, Thai, Chinese, Swahili, French, and so on. Read it directly, whatever the script. A label being in a non-English or local language is NOT a red flag on its own; most safe products in these markets are labelled in local languages. The danger signal is MISSING information, never the choice of language.
 
 Apply these red flags:
 - A warning to avoid contact with gold, silver, aluminium, or jewellery → classic sign of MERCURY (it reacts with metals). Treat as HIGH severity even if mercury is not listed.
-- No ingredient list and no manufacturer/origin anywhere on the pack, OR a handwritten/handmade label, OR clearly repackaged or photocopied packaging → HIGH severity: the contents are unknowable, and this pattern correlates with contamination. (Note: a printed ingredient list in a local language is fine — only its ABSENCE counts.)
+- No ingredient list and no manufacturer/origin anywhere on the pack, OR a handwritten/handmade label, OR clearly repackaged or photocopied packaging → HIGH severity: the contents are unknowable, and this pattern correlates with contamination. (Note: a printed ingredient list in a local language is fine ; only its ABSENCE counts.)
 - Named dangerous actives in ANY language or transliteration: mercury, mercurous chloride, calomel, mercuric/ammoniated mercury, hydroquinone, clobetasol, betamethasone, or other potent topical steroids sold as a cosmetic → HIGH severity.
 - Rapid-results or aggressive whitening/bleaching claims ("whitens in 7 days", "removes melanin", "instant fairness"), in any language → MEDIUM severity.
 - Repackaged no-name product, missing manufacturer, suspicious import → MEDIUM severity.
@@ -259,7 +259,7 @@ If the image is not a product label, or is too blurry to read, return risk_level
 
 LANGUAGE OF YOUR REPLY: Write all human-readable text in ${language}, in simple wording for a reader who may have low literacy. BUT keep the JSON structure in English: the keys, and the enum values (risk_level must be exactly high_concern, caution, or insufficient_info; severity must be exactly high, medium, or info; booleans stay true/false). Translate ONLY the values of headline, title, detail, name, explanation, what_to_do, and honesty_note.
 
-OUTPUT FORMAT: Your entire reply must be the JSON object alone — the first character is { and the last character is }. No markdown, no code fences, no text before or after, in any language. Use exactly this shape:
+OUTPUT FORMAT: Your entire reply must be the JSON object alone ; the first character is { and the last character is }. No markdown, no code fences, no text before or after, in any language. Use exactly this shape:
 {
   "risk_level": "high_concern" | "caution" | "insufficient_info",
   "headline": "one short plain sentence",

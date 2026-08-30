@@ -24,7 +24,7 @@ export function Efforts() {
           <p className="mt-5 max-w-2xl text-pretty text-base leading-relaxed text-tone-2/80">
             Awareness alone is not enough. This initiative pairs rigorous
             science with public education to make skin health safer and more
-            equitable — and to dismantle the idea that any complexion needs
+            equitable ; and to dismantle the idea that any complexion needs
             fixing.
           </p>
         </Reveal>
